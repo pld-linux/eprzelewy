@@ -1,5 +1,5 @@
 Summary:	Program to print transfers
-Summary(pl):	Program do drukowania przelewow
+Summary(pl):	Program do drukowania przelewów
 Name:		eprzelewy
 Version:	1.0
 Release:	0.1
@@ -21,14 +21,14 @@ System e-Przelewy zosta³ przygotowany z my¶l± o tych u¿ytkownikach,
 którzy chc± korzystaæ z Linuksa w codziennej pracy zawodowej. Jest to
 wszechstronny program, pracuj±cy w trybie graficznym (okienkowym np.
 KDE, GNOME, fluxbox). Daje on mo¿liwo¶æ prostej obs³ugi wszelkiego
-rodzaju przelewów. Obs³uguje: przelewy zwykle , wp³aty, przelewy na
-ZUS, wp³aty podatku dla Urzêdu Skarbowego (US). Mo¿liwe je st tak¿e
+rodzaju przelewów. Obs³uguje: przelewy zwykle, wp³aty, przelewy na
+ZUS, wp³aty podatku dla Urzêdu Skarbowego (US). Mo¿liwe jest tak¿e
 wykonywanie nadruków na oryginalnych drukach z poczty, banku lub
-urzêdu . Wbudowana w program baza kontrahentów sprawia, ¿e dokonanie
-przelewu na dowoln e konto, czy to do ZUS, US jest w zasiêgu kilku
+urzêdu. Wbudowana w program baza kontrahentów sprawia, ¿e dokonanie
+przelewu na dowolne konto, czy to do ZUS, US jest w zasiêgu kilku
 ruchów mysz±. Równie prosta jest obs³uga przelewów, które wykonujemy
 cyklicznie np. wp³aty ZUS, wystarczy wówcza s otworzyæ z historii
-przelew z zesz³ego miesi±ca i jedynie zmieniæ kwot± lub tytu³.
+przelew z zesz³ego miesi±ca i jedynie zmieniæ kwotê lub tytu³.
 
 %prep
 %setup -q -n %{name}
