@@ -15,8 +15,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 e-Przelewy is a GUI program to print transfers. It's targeted to
-Polish users and contains options specific to Polish taxes system
-etc.
+Polish users and contains options specific to Polish tax system etc.
 
 %description -l pl
 System e-Przelewy zosta³ przygotowany z my¶l± o tych u¿ytkownikach,
