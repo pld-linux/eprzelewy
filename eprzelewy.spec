@@ -44,16 +44,17 @@ qmake przelewy.pro
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -D bin/eprzelewy $RPM_BUILD_ROOT/%{_bindir}/eprzelewy
-install -d $RPM_BUILD_ROOT/%{_datadir}
-cp -r share/%{name} $RPM_BUILD_ROOT/%{_datadir}/
-install -D ./share/eprzelewy/icons/eprzelewy.desktop $RPM_BUILD_ROOT/%{_desktopdir}/%{name}.desktop
+install -D bin/eprzelewy $RPM_BUILD_ROOT%{_bindir}/eprzelewy
+install -d $RPM_BUILD_ROOT%{_datadir}
+cp -r share/%{name} $RPM_BUILD_ROOT%{_datadir}
+install -D ./share/eprzelewy/icons/eprzelewy.desktop $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc changelog FAQ README README.ENG
 %attr(755,root,root) %{_bindir}/*
 %dir %{_datadir}/%{name}
 %dir %{_datadir}/%{name}/icons
