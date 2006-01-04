@@ -2,11 +2,12 @@ Summary:	Program to print transfers
 Summary(pl):	Program do drukowania przelewów
 Name:		eprzelewy
 Version:	1.0
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.e-linux.pl/modules/e-przelewy/%{name}-%{version}.tar.gz
-# Source0-md5:	e26f4249b44bcaa5a34191d57d65f046
+# Source0-md5:	ad3280b7006c465d598566d3857ab423
+Patch0:		%{name}-desktop.patch
 URL:		http://www.e-linux.pl/modules/e-przelewy/
 BuildRequires:	qmake
 BuildRequires:	qt-devel
@@ -33,6 +34,7 @@ przelew z zesz³ego miesi±ca i jedynie zmieniæ kwotê lub tytu³.
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1
 
 %build
 export QTDIR=%{_prefix}
@@ -44,7 +46,8 @@ qmake przelewy.pro
 rm -rf $RPM_BUILD_ROOT
 install -D bin/eprzelewy $RPM_BUILD_ROOT/%{_bindir}/eprzelewy
 install -d $RPM_BUILD_ROOT/%{_datadir}
-cp -r share/%{name} $RPM_BUILD_ROOT/%{_datadir}
+cp -r share/%{name} $RPM_BUILD_ROOT/%{_datadir}/
+install -D ./share/eprzelewy/icons/eprzelewy.desktop $RPM_BUILD_ROOT/%{_desktopdir}/%{name}.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -52,4 +55,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/%{name}
+%dir %{_datadir}/%{name}
+%dir %{_datadir}/%{name}/icons
+%{_datadir}/%{name}/icons/*.png
+%{_datadir}/%{name}/druki
+%{_desktopdir}/*.desktop
