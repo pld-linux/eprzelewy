@@ -21,7 +21,7 @@ diff -Naur eprzelewy-orig/share/eprzelewy/icons/eprzelewy.desktop eprzelewy/shar
 +Name=e-Przelewy
 +Name[pl]=e-Przelewy
 +Comment=Application for printing transfer forms
-+Comment[pl]=Aplikacja do drukowania przelewów
++Comment[pl]=Aplikacja do drukowania przelewÃ³w
  Icon=/usr/share/eprzelewy/icons/eprzelewy_64.png
  MapNotify=true
  MimeType=application/x-assistant
