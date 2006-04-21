@@ -54,7 +54,7 @@ install -D ./share/eprzelewy/icons/eprzelewy.desktop $RPM_BUILD_ROOT%{_desktopdi
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-echo %{_desktopdir}
+
 %files
 %defattr(644,root,root,755)
 %doc changelog FAQ README README.ENG
