@@ -2,7 +2,7 @@ Summary:	Program to print transfers
 Summary(pl):	Program do drukowania przelewów
 Name:		eprzelewy
 Version:	1.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.e-linux.pl/modules/e-przelewy/%{name}-%{version}.tar.gz
@@ -12,6 +12,7 @@ URL:		http://www.e-linux.pl/modules/e-przelewy/
 BuildRequires:	qmake
 BuildRequires:	qt-devel
 BuildRequires:	sed >= 4.0
+Conflicts:	applnk < 1.9.5-20
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
