@@ -10,7 +10,7 @@ diff -Naur eprzelewy-orig/share/eprzelewy/icons/eprzelewy.desktop eprzelewy/shar
  Type=Application
 -Categories=Application;Office
 -Exec=/usr/bin/eprzelewy
-+Categories=Qt;Office;
++Categories=Qt;Office;Finance
 +Exec=eprzelewy
  TryExec=
  X-GNOME-DocPath=
