@@ -1,5 +1,5 @@
 
-%define         _pre            pre1
+%define		_pre	pre1
 
 Summary:	Program to print transfers
 Summary(pl):	Program do drukowania przelewów
