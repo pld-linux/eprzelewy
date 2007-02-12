@@ -2,7 +2,7 @@
 %define		_pre	pre1
 
 Summary:	Program to print transfers
-Summary(pl.UTF-8):   Program do drukowania przelewów
+Summary(pl.UTF-8):	Program do drukowania przelewów
 Name:		eprzelewy
 Version:	1.0.2
 Release:	1.%{_pre}.1
