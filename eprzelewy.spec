@@ -2,7 +2,7 @@
 %define		_pre	pre1
 
 Summary:	Program to print transfers
-Summary(pl):	Program do drukowania przelewów
+Summary(pl.UTF-8):   Program do drukowania przelewÃ³w
 Name:		eprzelewy
 Version:	1.0.2
 Release:	1.%{_pre}.1
@@ -21,19 +21,19 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 e-Przelewy is a GUI program to print transfers. It's targeted to
 Polish users and contains options specific to Polish tax system etc.
 
-%description -l pl
-System e-Przelewy zosta³ przygotowany z my¶l± o tych u¿ytkownikach,
-którzy chc± korzystaæ z Linuksa w codziennej pracy zawodowej. Jest to
-wszechstronny program, pracuj±cy w trybie graficznym (okienkowym np.
-KDE, GNOME, fluxbox). Daje on mo¿liwo¶æ prostej obs³ugi wszelkiego
-rodzaju przelewów. Obs³uguje: przelewy zwykle, wp³aty, przelewy na
-ZUS, wp³aty podatku dla Urzêdu Skarbowego (US). Mo¿liwe jest tak¿e
-wykonywanie nadruków na oryginalnych drukach z poczty, banku lub
-urzêdu. Wbudowana w program baza kontrahentów sprawia, ¿e dokonanie
-przelewu na dowolne konto, czy to do ZUS, US jest w zasiêgu kilku
-ruchów mysz±. Równie prosta jest obs³uga przelewów, które wykonujemy
-cyklicznie np. wp³aty ZUS, wystarczy wówcza s otworzyæ z historii
-przelew z zesz³ego miesi±ca i jedynie zmieniæ kwotê lub tytu³.
+%description -l pl.UTF-8
+System e-Przelewy zostaÅ‚ przygotowany z myÅ›lÄ… o tych uÅ¼ytkownikach,
+ktÃ³rzy chcÄ… korzystaÄ‡ z Linuksa w codziennej pracy zawodowej. Jest to
+wszechstronny program, pracujÄ…cy w trybie graficznym (okienkowym np.
+KDE, GNOME, fluxbox). Daje on moÅ¼liwoÅ›Ä‡ prostej obsÅ‚ugi wszelkiego
+rodzaju przelewÃ³w. ObsÅ‚uguje: przelewy zwykle, wpÅ‚aty, przelewy na
+ZUS, wpÅ‚aty podatku dla UrzÄ™du Skarbowego (US). MoÅ¼liwe jest takÅ¼e
+wykonywanie nadrukÃ³w na oryginalnych drukach z poczty, banku lub
+urzÄ™du. Wbudowana w program baza kontrahentÃ³w sprawia, Å¼e dokonanie
+przelewu na dowolne konto, czy to do ZUS, US jest w zasiÄ™gu kilku
+ruchÃ³w myszÄ…. RÃ³wnie prosta jest obsÅ‚uga przelewÃ³w, ktÃ³re wykonujemy
+cyklicznie np. wpÅ‚aty ZUS, wystarczy wÃ³wcza s otworzyÄ‡ z historii
+przelew z zeszÅ‚ego miesiÄ…ca i jedynie zmieniÄ‡ kwotÄ™ lub tytuÅ‚.
 
 %prep
 %setup -q -n %{name}
