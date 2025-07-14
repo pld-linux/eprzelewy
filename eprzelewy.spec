@@ -37,7 +37,7 @@ przelew z zeszłego miesiąca i jedynie zmienić kwotę lub tytuł.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 export QTDIR=%{_prefix}
